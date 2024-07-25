@@ -1,0 +1,15 @@
+create table if not exists service_desk_configuration(
+configuration_id Integer not null,
+configuration_owner varchar(255) null,
+active_account char null,
+configuration_type_id Integer null,
+configuration_type varchar(255) null,
+configuration_status varchar(255) null,
+configuration_description Integer null,
+service_template Integer null,
+application_pages varchar(255) null,
+tasks Integer null,
+tickets_in_progress varchar(255) null,
+tickets_status_list varchar(255) null,
+ticket_validity varchar(255) null,
+constraint service_desk_configuration_pk primary key(configuration_id));
